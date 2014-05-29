@@ -44,13 +44,15 @@ END
 ```
 
 ### Operators allowed in Calculations
-+ = = or = (Equal to)
-+ != or <> (Not equal to)
-+ >
-+ <
-+ >=
-+ <=
-+ AND / OR logical operators
+```
+= = or = (Equal to)
+!= or <> (Not equal to)
+>
+<
+>=
+<=
+AND / OR logical operators
+```
 
 ### Count Distinct
 1. create this calculated field: ```SIZE()```
@@ -59,7 +61,7 @@ END
 ## Mapping
 
 ### Projections
-Tableau default projection is WGS 84
++ Tableau default projection is WGS 84
 
 ## Data Cleaning
 
@@ -78,15 +80,15 @@ DATE("01/01/" + STR([Year]))
 ### Hide specific mark labels
 R-Click on label and select "Never Show"
 
-### Showing Data Rafresh Date on a View
-Showing data refreshed date can be added to the title of any worksheet, but not standalone text boxes on dashboards
+### Showing Data Refresh Date on a View
+Showing data refreshed date can be added to the title of any worksheet, but not standalone text boxes on dashboards  
 1. Edit the title of your worksheet by selecting the carat at the top right corner of the title and choosing "Edit" 
 2. select the "Insert" dropdown and add "Data Update Time" 
 
 ## Dashboards
 
 ### URL Actions
-Use Case: when I click a field I want the wikipedia page for that field to appear
+Use Case: when I click a field I want the wikipedia page for that field to appear  
 1. Add wikipedia URL to level of detail shelf on the corresponding view
 2. Create an action that uses the sheet with the field you want to click as the source 
 3. Instead of having a target sheet, add the wikipedia URL field which will now be available as an option, because it has been added to the level of detail shelf on the corresponding worksheet
