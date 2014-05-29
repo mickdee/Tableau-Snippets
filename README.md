@@ -1,7 +1,7 @@
 Tableau Snippets
 ================
 
-Tableau tidbits for a variety of formatting, calculating, and dashboarding uses
+Cheatsheet for a variety of formatting, calculating, and dashboarding needs
 
 ## Filtering
 
