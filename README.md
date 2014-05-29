@@ -15,7 +15,7 @@ IF [Dimension] = "Value"
 THEN [Measure]
 END  
 ```  
-This is useful when you don't want a filter to apply to only a single field on a worksheet
+This is useful when you want a filter to apply to only a single field on a worksheet
 
 ## Nuisances
 
