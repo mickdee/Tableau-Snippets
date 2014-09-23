@@ -105,6 +105,11 @@ Use Case: when I click a field I want the wikipedia page for that field to appea
 2. In the shapes directory you'll find all the shape sets which Tableau uses automatically.
 3. Create a new directory here and throw in your new shape images. Shape images should ideally be square and sized no bigger than 32 X 32 
 
+#### Table Options
++ By default, Tableau will only allow tables with 6 levels of row labels (fields).
++ To adjust this, Navigate to Analysis > Table Layout > Advanced
++ In the "Table Options" dialog that appears, you can adjust the max number of levels allowed up to 16 for rows and columns
+
 ## Tableau Public
 
 #### Public multiple views from the same workbook
