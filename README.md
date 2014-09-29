@@ -71,6 +71,15 @@ DATE("01-01-"+[FY_Year])
 OR  
 DATE("01/01/" + STR([Year]))
 
+#### Removing Units (ex: sq ft) from numbers and converting to usable measures
+```
+FLOAT(
+    REPLACE(
+        (LEFT([Dimension], FIND([Dimension]," "))) , ",", "" 
+        )
+)
+```
+
 ## Finishing Touches
 
 #### Dynamic tooltips
@@ -90,13 +99,14 @@ Showing data refreshed date can be added to the title of any worksheet, but not 
 
 #### URL Actions
 Use Case: when I click a field I want the wikipedia page for that field to appear
+Note: URL must be included in your dataset for each record
 
 1. Add wikipedia URL to level of detail shelf on the corresponding view
 2. Create an action that uses the sheet with the field you want to click as the source 
 3. Instead of having a target sheet, add the wikipedia URL field which will now be available as an option, because it has been added to the level of detail shelf on the corresponding worksheet
 
 #### Navigate between Dashboards
-1. Create calculated field with the text of your link, ie "Click Here"
+1. Create calculated field with the text of your link, ie "Click Here to go to Dashboard 2"
 2. Add new calculated field to a sheet
 3. Add sheet to your source dashboard and create an action that points to the target dashboard
 
@@ -112,7 +122,7 @@ Use Case: when I click a field I want the wikipedia page for that field to appea
 
 ## Tableau Public
 
-#### Public multiple views from the same workbook
+#### Publish multiple views from the same workbook
 1. In your workbook, hide all tabs / views you don't want people to be able to navigate to
 2. Save to Tableau Public
 3. Go to your published workbook settings (on the Tableau Public site), check "show sheets as tabs"
