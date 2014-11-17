@@ -19,19 +19,19 @@ This is useful when you want a filter to apply to only a single field on a works
 
 ## PRO TIPS
 
-#### When in doubt, right-click on stuff. Almost everything in Tableau has parameters or sub-menus that can be set to customize formatting or other options in your view.
+When in doubt, right-click on stuff. Almost everything in Tableau has parameters or sub-menus that can be set to customize formatting or other options in your view.
 
 #### Greens vs Blues = Continuous vs Discrete 
 
-#### There is surprisingly little documentation in the interface (if any) that tells you the magic of simply understanding the difference between green and blue things. 
+There is surprisingly little documentation in the interface (if any) that tells you the magic of simply understanding the difference between green and blue things. 
 
-#### Green = Continuous (create axes). But what does that mean? Think of continuous like a spectrum with no beginning or ending point. A date field set to continuous will have an axis that can be oriented to any position along the spectrum of time -- allowing you to customize the view as tightly or broadly around a range of dates as you like. 
+Green = Continuous (create axes). But what does that mean? Think of continuous like a spectrum with no beginning or ending point. A date field set to continuous will have an axis that can be oriented to any position along the spectrum of time -- allowing you to customize the view as tightly or broadly around a range of dates as you like. 
 
-#### Blue = Discrete (create headers). Discrete data assumes the max and min values in your dataset are absolute endpoints. There is nothing higher or lower that can be viewed. The axis of a date field set to discreet will not appear as an endless spectrum then, but as unique intervals that can be filtered or analyzed independently.
+Blue = Discrete (create headers). Discrete data assumes the max and min values in your dataset are absolute endpoints. There is nothing higher or lower that can be viewed. The axis of a date field set to discreet will not appear as an endless spectrum then, but as unique intervals that can be filtered or analyzed independently.
 
-#### This distinction exists so that you can use continuous dimensions or discrete measures in the view.
+This distinction exists so that you can use continuous dimensions or discrete measures in the view.
 
-#### Aggregate calculations are always measures.
+Aggregate calculations are always measures.
 
 ## NUISANCES
 
