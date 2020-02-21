@@ -17,10 +17,6 @@ END
 ```  
 This is useful when you want a filter to apply to only a single field on a worksheet
 
-## PRO TIPS
-
-When in doubt, right-click on stuff. Almost everything in Tableau has parameters or sub-menus that can be set to customize formatting or other options in your view.
-
 #### Greens vs Blues = Continuous vs Discrete 
 
 There is surprisingly little documentation in the interface (if any) that tells you the magic of simply understanding the difference between green and blue things. 
@@ -135,7 +131,12 @@ Note: URL must be included in your dataset for each record
 + To adjust this, Navigate to Analysis > Table Layout > Advanced
 + In the "Table Options" dialog that appears, you can adjust the max number of levels allowed up to 16 for rows and columns
 
-## ADDING THE FINISHING TOUCHES
+#### Show Dates with No Data in Timeline Charts
+
++ Right click on the date/time dimension in the rows or columns shelf and select 'Show Missing Values'
++ This is important if you want to show gaps in a timeline where there was no data collected
+
+## FINISHING TOUCHES
 
 #### Dynamic tooltips
 + In a tooltip, you can place summary statistics as well as and dimension / measure used in the view or placed on the marks shelf
@@ -169,3 +170,7 @@ Showing data refreshed date can be added to the title of any worksheet, but not 
 + New Worksheet: Ctrl + M
 + Connect to Data: Ctrl + D
 + Refresh source data (not extract): F5
+
+## PRO TIPS
+
+When in doubt, right-click on stuff. Almost everything in Tableau has parameters or sub-menus that can be set to customize formatting or other options in your view.
